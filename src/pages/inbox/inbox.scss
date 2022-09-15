@@ -1,0 +1,144 @@
+.main{
+    .emails{
+        flex: 2;
+        cursor: pointer;
+        .filtrebox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: var(--background-color);
+            border-right: 1px solid var(--primari-color);
+            border-bottom: 1px solid var(--primari-color);
+            .filtre{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input{
+                    border: none;
+                    width: 80%;
+                    background-color: transparent;
+                    outline: none;
+                    font-size: 16px;
+                    color: var(--text-light);
+                    &::placeholder{
+                        color: var(--text-light);
+                    }
+                }
+                .icon{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .email{
+            background-color: var(--background-color);
+            margin: 0;
+            padding-left: 5px;
+            &:hover{
+                border-left: 5px solid var(--primari-color);
+                padding-left: 0;
+            }
+            .avatar{
+                
+                background-color: var(--background-color);
+                width: 100%;
+                margin: 0;
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin: 20px 20px 20px 20px;
+                        object-fit: cover;
+                    }
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        .time{
+                            margin-right: 20px;
+                        }
+                    }
+                    
+
+                }
+                .bottom{
+                    h3{
+                        margin: 0 30px;
+                        font-size: 20px;
+                    }
+                    p{
+                        margin: 0 30px;
+                        color: var(--text-light);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; 
+                        line-clamp: 2; 
+                        -webkit-box-orient: vertical;
+                    }
+                }
+                
+            }
+        }
+    }
+    .viewMail{
+        flex: 4;
+        height: 100px;
+        
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 50px;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+            .nameUser{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .name{
+                    font-size: 18px;
+                    color: var(--text-light);
+                }
+                .time{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--text-light);
+                    .icon{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .bottom{
+            margin: 50px;
+            h3{
+                margin: 20px 0;
+                font-size: 28px;
+            }
+        }
+    }
+    .email{
+        flex: 4;
+        display: flex;
+        justify-content: center;
+        .icon{
+            font-size: 300px;
+            margin: 250px 0;
+            color: var(--text-light);
+        }
+    }
+}

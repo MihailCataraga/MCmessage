@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    .mail{
+        flex: 6;
+        display: flex;
+        justify-content: center;
+        .icon{
+            font-size: 600px;
+            margin: 150px 0;
+            color: var(--text-light);
+        }
+    }
+}
